@@ -1,0 +1,31 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dashboard-heading {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 2px;
+  color: rgba(114, 98, 163, 1);
+}
+
+.dashboard-heading * {
+  margin: 0;
+  padding: 0;
+}
+
+.time-span {
+  padding: 10px;
+  background: rgba(114, 98, 163, 1);
+  color: white;
+  border-radius: 5px;
+}
+
+.safety-header{
+  margin: 20px;
+}
+
+.tiles-list {
+  margin-top: 20px;
+}
