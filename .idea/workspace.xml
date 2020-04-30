@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2671ad6e-a583-43c4-880f-e22655fc3182" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/animations/personChasingCorona.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/safety-measures.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/single_item.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/styles/list.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/styles/tiles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/tile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,17 +18,46 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Sass File" />
+        <option value="JavaScript File" />
+        <option value="SCSS File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1bF83GmDHnTBYGFWT6HsYZlZ3b0" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.last.introduce.type" value="CONST" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="D:\applications\PyCharm 2019.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\challenges\corona\src\components" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -61,8 +96,59 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1588216281008</updated>
-      <workItem from="1588216306393" duration="3307000" />
+      <workItem from="1588216306393" duration="6730000" />
+      <workItem from="1588240247416" duration="26148000" />
     </task>
+    <task id="LOCAL-00001" summary="Added an import of the first page.. That's the first view">
+      <created>1588273778958</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1588273778959</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added an import of the first page.. That's the first view">
+      <created>1588276187271</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1588276187271</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Animations Sprites for chasing a person and chasing corona">
+      <created>1588276257103</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1588276257103</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added graphs for handling statistics">
+      <created>1588276300952</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1588276300952</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added the sidemenu components for holding the side menu">
+      <created>1588276342857</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1588276342857</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added the icon and text component for holding icon and text pluggables">
+      <created>1588276374684</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1588276374684</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Created the header banner of the app.. It is the heading of teh app">
+      <created>1588276411007</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1588276411007</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -73,10 +159,21 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added an import of the first page.. That's the first view" />
+    <MESSAGE value="Animations Sprites for chasing a person and chasing corona" />
+    <MESSAGE value="Added graphs for handling statistics" />
+    <MESSAGE value="Added the sidemenu components for holding the side menu" />
+    <MESSAGE value="Added the icon and text component for holding icon and text pluggables" />
+    <MESSAGE value="Created the header banner of the app.. It is the heading of teh app" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created the header banner of the app.. It is the heading of teh app" />
   </component>
 </project>
