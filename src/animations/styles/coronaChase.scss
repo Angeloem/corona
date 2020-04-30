@@ -1,0 +1,35 @@
+.coChaseContainer {
+  width: 100%;
+  background: transparent;
+  height: 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: self-start;
+}
+
+.corona {
+  background: red;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  animation: moveright 2s linear forwards;
+}
+
+.person {
+  background: green;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  animation: moveright 2s linear forwards;
+}
+
+@keyframes moveright {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translateX(550%);
+  }
+}

@@ -1,0 +1,54 @@
+.tile {
+  padding: 30px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  grid-gap: 10px;
+  background-image: linear-gradient(to top left, #a18cd1 0%, #fbc2eb 100%);
+  color: white;
+  border-radius: 5px;
+}
+
+.tile2 {
+  padding: 30px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  grid-gap: 10px;
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  color: white;
+  border-radius: 5px;
+}
+
+.tile3 {
+  padding: 30px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  grid-gap: 10px;
+  background-image: linear-gradient(to top left, #d9afd9 0%, #97d9e1 100%);
+  color: white;
+  border-radius: 5px;
+}
+
+.tile4 {
+  padding: 30px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  grid-gap: 10px;
+  background: linear-gradient(to top left, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.40) 120%) #989898;
+  background-blend-mode: multiply, multiply;
+  color: white;
+  border-radius: 5px;
+}
+
+.head {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.stat {
+  font-size: 16px;
+  font-weight: 500;
+}

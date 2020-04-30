@@ -1,0 +1,26 @@
+.container-icon {
+  padding: 10px;
+  margin-bottom: 2px;
+  display: flex;
+  justify-content: space-between;
+  background: #504472;
+  border-radius: 10px;
+  border-bottom: 1px solid rgba(80, 68, 114, 0.46);
+}
+
+.text {
+  padding: 5px;
+  font-size: 150%;
+  font-weight: bold;
+  color: rgba(114, 98, 163, 1);
+  /*text-shadow: -1px 1px 0 ,
+                          1px 1px 0 #504472,
+                         1px -1px 0 #504472,
+                        -1px -1px 0 #504472;*/
+}
+
+.icon {
+  padding: 5px;
+  font-size: 150%;
+  color:  rgba(114, 98, 163, 1);
+}
