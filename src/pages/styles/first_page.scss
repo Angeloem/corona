@@ -1,0 +1,41 @@
+.container{
+  display: grid;
+  grid-template-columns: 1fr 4fr 2fr;
+}
+
+.sidebar{
+  height: 100%;
+  background: #504472;
+  padding: 50px;
+}
+
+.middle-container{
+  height: 100%;
+  margin: 20px;
+}
+
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 20px;
+  margin: 20px 0;
+}
+
+.graphs {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 1fr);
+}
+
+.area-chart {
+  margin-top: 50px;
+}
+
+.scatter-plot {
+  margin-top: 50px;
+}
+
+.final-container {
+  background: rgba(80, 68, 114, 0.46);
+  height: 100%;
+}
