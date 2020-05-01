@@ -7,7 +7,7 @@ import {LineGraph} from "../components/lineGraph";
 import './styles/first_page.scss';
 import {ScatterPlot} from "../components/scatterPlot";
 import {SafetyMeasures} from "../components/safety-measures";
-import {CoronaChase} from "../animations/coronaChasingPerson";
+import {AboutMe} from "../animations/aboutMe";
 
 export class FirstPage extends Component {
     render() {
@@ -30,7 +30,7 @@ export class FirstPage extends Component {
                     </div>
                     <div className={`graphs`}>
                         {/* graphs here */}
-                        <CoronaChase />
+                        {/*<CoronaChase />*/}
                         <div className={`area-chart`}>
                             <LineGraph />
                         </div>
@@ -44,6 +44,9 @@ export class FirstPage extends Component {
                 </div>
                 <div className={`final-container`}>
                     <SafetyMeasures />
+                    <div className="about-me">
+                        <AboutMe />
+                    </div>
                 </div>
             </div>
         );
