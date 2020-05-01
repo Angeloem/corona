@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2671ad6e-a583-43c4-880f-e22655fc3182" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/animations/personChasingCorona.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/safety-measures.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/single_item.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/styles/list.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/styles/tiles.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/tile.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/animations/aboutMe.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/animations/styles/about.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/me.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/esanga.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/esanga.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/first_page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/first_page.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/styles/first_page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/styles/first_page.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,6 +43,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="CONST" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -55,6 +57,9 @@
     <property name="ts.external.directory.path" value="D:\applications\PyCharm 2019.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\challenges\corona\src\assets" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\challenges\corona\src\components" />
     </key>
@@ -97,7 +102,8 @@
       <option name="presentableId" value="Default" />
       <updated>1588216281008</updated>
       <workItem from="1588216306393" duration="6730000" />
-      <workItem from="1588240247416" duration="26148000" />
+      <workItem from="1588240247416" duration="29631000" />
+      <workItem from="1588341029922" duration="9025000" />
     </task>
     <task id="LOCAL-00001" summary="Added an import of the first page.. That's the first view">
       <created>1588273778958</created>
@@ -148,7 +154,35 @@
       <option name="project" value="LOCAL" />
       <updated>1588276411007</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added tiles which do give fast information of the disease">
+      <created>1588276450141</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1588276450141</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added a safety measures holder component">
+      <created>1588276505354</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1588276505354</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added a file to reverse a corona chasing a person">
+      <created>1588276528274</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1588276528274</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Styling the safety measures list">
+      <created>1588276546082</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1588276546082</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,6 +208,10 @@
     <MESSAGE value="Added the sidemenu components for holding the side menu" />
     <MESSAGE value="Added the icon and text component for holding icon and text pluggables" />
     <MESSAGE value="Created the header banner of the app.. It is the heading of teh app" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created the header banner of the app.. It is the heading of teh app" />
+    <MESSAGE value="Added tiles which do give fast information of the disease" />
+    <MESSAGE value="Added a safety measures holder component" />
+    <MESSAGE value="Added a file to reverse a corona chasing a person" />
+    <MESSAGE value="Styling the safety measures list" />
+    <option name="LAST_COMMIT_MESSAGE" value="Styling the safety measures list" />
   </component>
 </project>
