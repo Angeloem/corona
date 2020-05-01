@@ -1,53 +1,54 @@
 import React from "react";
 import './styles/tiles.scss';
 
-export const Tile = () => {
+export const Tile = (number) => {
+    // number === '' ? 'loading': number;
     return (
         <div className={'tile'}>
             <div className={"head"}>
-                'number'
+                { number }
             </div>
             <div className="stat">
-                 'head'
+                 New Confirmed
             </div>
         </div>
     )
 };
 
-export const Tile2 = () => {
+export const Tile2 = (number) => {
     return (
         <div className={'tile2'}>
             <div className={"head"}>
-                'number'
+                { number }
             </div>
             <div className="stat">
-                 'head'
+                 Total Confirmed
             </div>
         </div>
     )
 };
 
-export const Tile3 = () => {
+export const Tile3 = (number) => {
     return (
         <div className={'tile3'}>
             <div className={"head"}>
-                'number'
+                { number }
             </div>
             <div className="stat">
-                 'head'
+                 Total Recoveries
             </div>
         </div>
     )
 };
 
-export const Tile4 = () => {
+export const Tile4 = (number) => {
     return (
         <div className={'tile4'}>
             <div className={"head"}>
-                'number'
+                { number }
             </div>
             <div className="stat">
-                 'head'
+                 Total Deaths
             </div>
         </div>
     )

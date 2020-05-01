@@ -1,17 +1,31 @@
 import React, {Component} from "react";
 import {CartesianGrid, Legend, Scatter, ScatterChart, Tooltip, XAxis, YAxis, ZAxis} from "recharts";
+import * as axios from "axios";
 
 export class ScatterPlot extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {width: 0, height: 0};
+        this.state = {
+            width: 0,
+            height: 0,
+            data: []
+        };
         this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
     }
 
     componentDidMount() {
         this.updateWindowDimensions();
         window.addEventListener('resize', this.updateWindowDimensions);
+        axios.default.get(
+            'https://api.covid19api.com/country/tanzania?from=2020-03-01T00:00:00Z&to=2020-04-01T00:00:00Z'
+        ).then((res) => {
+            this.setState({
+                data: res.data
+            });
+        }).catch((err) => {
+            alert('Data loading failed, please try again!!');
+        });
     }
 
     componentWillUnmount() {
@@ -92,13 +106,13 @@ export class ScatterPlot extends Component {
                 <ScatterChart width={730} height={this.state.height / 2}
                               margin={{top: 20, right: 20, bottom: 10, left: 10}}>
                     {/*<CartesianGrid strokeDasharray="3 3"/>*/}
-                    <XAxis dataKey="x" name="stature" unit="cm"/>
-                    <YAxis dataKey="y" name="weight" unit="kg"/>
-                    <ZAxis dataKey="z" range={[64, 144]} name="score" unit="km"/>
+                    <XAxis dataKey="Deaths" name="Confirmed"/>
+                    <YAxis dataKey="Recovered" name="Recovered"/>
+                    <ZAxis dataKey="NewConfirmed" name="New Confirmed" unit="people"/>
                     <Tooltip cursor={{strokeDasharray: '3 3'}}/>
                     <Legend/>
-                    <Scatter name="A school" data={this.data01} fill="#8884d8"/>
-                    <Scatter name="B school" data={this.data02} fill="#82ca9d"/>
+                    <Scatter name="Confirmed" data={this.state.data} fill="#8884d8"/>
+                    <Scatter name="Deaths" data={this.state.data} fill="#82ca9d"/>
                 </ScatterChart>
             </div>
         );
