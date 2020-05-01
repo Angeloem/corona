@@ -8,8 +8,37 @@ import './styles/first_page.scss';
 import {ScatterPlot} from "../components/scatterPlot";
 import {SafetyMeasures} from "../components/safety-measures";
 import {AboutMe} from "../animations/aboutMe";
+import * as axios from "axios";
 
 export class FirstPage extends Component {
+    constructor() {
+        super();
+
+        this.state = {
+            data: [],
+            newConfirmed: '',
+            totalDeaths: '',
+            totalRecoveries: '',
+            totalConfirmed: '',
+        };
+    }
+
+    componentDidMount(){
+        axios.default.get(
+            'https://api.covid19api.com/summary'
+        ).then((res) => {
+            this.setState({
+                totalDeaths: res.data.Global['TotalDeaths'],
+                newConfirmed: res.data.Global['NewConfirmed'],
+                totalRecoveries: res.data.Global['TotalRecovered'],
+                totalConfirmed: res.data.Global['TotalConfirmed']
+            });
+            console.log(res.data.Global['TotalDeaths']);
+        }).catch((err) => {
+            alert('Data loading failed, please try again!!');
+        });
+    }
+
     render() {
         return (
             <div className={`container`}>
@@ -23,10 +52,10 @@ export class FirstPage extends Component {
                     </div>
                     <div className={`tiles`}>
                         {/* tiles here*/}
-                        <Tile/>
-                        <Tile2/>
-                        <Tile3/>
-                        <Tile4/>
+                        { Tile(this.state.newConfirmed ) }
+                        { Tile2(this.state.totalConfirmed) }
+                        { Tile3(this.state.totalRecoveries) }
+                        { Tile4(this.state.totalDeaths) }
                     </div>
                     <div className={`graphs`}>
                         {/* graphs here */}

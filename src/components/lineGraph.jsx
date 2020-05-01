@@ -1,14 +1,28 @@
 import React, {Component} from "react";
-import {Area, AreaChart, CartesianGrid, Legend, Line, Tooltip, XAxis, YAxis} from "recharts";
+import {Area, AreaChart, Legend, Tooltip, XAxis, YAxis} from "recharts";
+import * as axios from "axios";
 
 export class LineGraph extends Component {
     constructor(props) {
         super(props);
-        this.state = {width: 0, height: 0};
+        this.state = {
+            width: 0,
+            height: 0,
+            data: []
+        };
         this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
     }
 
     componentDidMount() {
+        axios.default.get(
+            'https://api.covid19api.com/country/tanzania?from=2020-03-01T00:00:00Z&to=2020-04-01T00:00:00Z'
+        ).then((res) => {
+            this.setState({
+                data: res.data
+            });
+        }).catch((err) => {
+            alert('Data loading failed, please try again!!');
+        });
         this.updateWindowDimensions();
         window.addEventListener('resize', this.updateWindowDimensions);
     }
@@ -21,48 +35,10 @@ export class LineGraph extends Component {
         this.setState({width: window.innerWidth, height: window.innerHeight});
     }
 
-    data = [
-        {
-            "name": "Page A",
-            "pv": 2400,
-            "amt": 2400
-        },
-        {
-            "name": "Page B",
-            "pv": 1398,
-            "amt": 2210
-        },
-        {
-            "name": "Page C",
-            "pv": 9800,
-            "amt": 2290
-        },
-        {
-            "name": "Page D",
-            "pv": 3908,
-            "amt": 2000
-        },
-        {
-            "name": "Page E",
-            "pv": 4800,
-            "amt": 2181
-        },
-        {
-            "name": "Page F",
-            "pv": 3800,
-            "amt": 2500
-        },
-        {
-            "name": "Page G",
-            "pv": 4300,
-            "amt": 2100
-        }
-    ];
-
     render() {
         return (
             <div className={`area-chart`}>
-                <AreaChart width={730} height={this.state.height/2} data={this.data}
+                <AreaChart width={730} height={this.state.height/2} data={this.state.data}
                            margin={{top: 5, right: 5, left: 5, bottom: 5}}>
                     {/*<CartesianGrid strokeDasharray="3 3"/>*/}
                     <defs>
@@ -75,11 +51,11 @@ export class LineGraph extends Component {
                             <stop offset="95%" stopColor="#82ca9d" stopOpacity={0}/>
                         </linearGradient>
                     </defs>
-                    <XAxis dataKey="name"/>
+                    <XAxis dataKey="Date"/>
                     <YAxis/>
                     <Tooltip/>
-                    <Legend/>
-                    <Area type="monotone" dataKey="pv" stroke="#8884d8" fillOpacity={1} fill={`url(#colorUv)`}/>
+                    <Legend />
+                    <Area type="monotone" dataKey="Confirmed" stroke="#8884d8" fillOpacity={1} fill={`url(#colorUv)`}/>
                 </AreaChart>
             </div>
         );

@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2671ad6e-a583-43c4-880f-e22655fc3182" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/animations/aboutMe.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/animations/styles/about.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/me.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/esanga.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/esanga.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/lineGraph.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/lineGraph.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/scatterPlot.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/scatterPlot.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/styles/tiles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/styles/tiles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/tile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/tile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/first_page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/first_page.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/styles/first_page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/styles/first_page.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -103,7 +100,7 @@
       <updated>1588216281008</updated>
       <workItem from="1588216306393" duration="6730000" />
       <workItem from="1588240247416" duration="29631000" />
-      <workItem from="1588341029922" duration="9025000" />
+      <workItem from="1588341029922" duration="15730000" />
     </task>
     <task id="LOCAL-00001" summary="Added an import of the first page.. That's the first view">
       <created>1588273778958</created>
@@ -182,7 +179,35 @@
       <option name="project" value="LOCAL" />
       <updated>1588276546082</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added an about me component to show my details">
+      <created>1588351113636</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1588351113636</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added the about me component... &#10;Changed the colors of the panels background to the theme color">
+      <created>1588351200489</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1588351200489</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Changed the page name and the icon to reflect corona's theme">
+      <created>1588351237593</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1588351237593</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Added assets which were displayed into the about page">
+      <created>1588351282654</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1588351282654</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,6 +237,10 @@
     <MESSAGE value="Added a safety measures holder component" />
     <MESSAGE value="Added a file to reverse a corona chasing a person" />
     <MESSAGE value="Styling the safety measures list" />
-    <option name="LAST_COMMIT_MESSAGE" value="Styling the safety measures list" />
+    <MESSAGE value="Added an about me component to show my details" />
+    <MESSAGE value="Added the about me component... &#10;Changed the colors of the panels background to the theme color" />
+    <MESSAGE value="Changed the page name and the icon to reflect corona's theme" />
+    <MESSAGE value="Added assets which were displayed into the about page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added assets which were displayed into the about page" />
   </component>
 </project>
