@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2671ad6e-a583-43c4-880f-e22655fc3182" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/esanga.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/esanga.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/lineGraph.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/lineGraph.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/scatterPlot.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/scatterPlot.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/styles/tiles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/styles/tiles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/tile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/tile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/first_page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/first_page.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/styles/first_page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/styles/first_page.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +96,7 @@
       <updated>1588216281008</updated>
       <workItem from="1588216306393" duration="6730000" />
       <workItem from="1588240247416" duration="29631000" />
-      <workItem from="1588341029922" duration="15730000" />
+      <workItem from="1588341029922" duration="17413000" />
     </task>
     <task id="LOCAL-00001" summary="Added an import of the first page.. That's the first view">
       <created>1588273778958</created>

@@ -3,12 +3,12 @@ import {Sidemenu} from "../components/sidemenu";
 import {Menu} from "../components/menu";
 import {Tile, Tile2, Tile3, Tile4} from "../components/tile";
 import {LineGraph} from "../components/lineGraph";
-
-import './styles/first_page.scss';
-import {ScatterPlot} from "../components/scatterPlot";
 import {SafetyMeasures} from "../components/safety-measures";
 import {AboutMe} from "../animations/aboutMe";
 import * as axios from "axios";
+
+import './styles/first_page.scss';
+
 
 export class FirstPage extends Component {
     constructor() {
@@ -42,9 +42,9 @@ export class FirstPage extends Component {
     render() {
         return (
             <div className={`container`}>
-                <div className={'sidebar'}>
+                {/*<div className={'sidebar'}>
                     <Sidemenu/>
-                </div>
+                </div>*/}
                 <div className={`middle-container`}>
                     <div className={`nav-bar`}>
                         {/* craze menu here */}
@@ -60,11 +60,9 @@ export class FirstPage extends Component {
                     <div className={`graphs`}>
                         {/* graphs here */}
                         {/*<CoronaChase />*/}
+                        <h4>Tanzania's Stats</h4>
                         <div className={`area-chart`}>
                             <LineGraph />
-                        </div>
-                        <div className={`scatter-plot`}>
-                            <ScatterPlot />
                         </div>
                     </div>
                     <div>

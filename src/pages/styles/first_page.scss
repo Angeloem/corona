@@ -1,6 +1,6 @@
 .container{
   display: grid;
-  grid-template-columns: 1fr 4fr 2fr;
+  grid-template-columns: 5fr 2fr;
 }
 
 .sidebar{
@@ -28,7 +28,7 @@
 }
 
 .area-chart {
-  margin-top: 50px;
+  margin-top: 0;
 }
 
 .scatter-plot {
@@ -43,4 +43,9 @@
 .about-me {
   padding: 10px;
   margin: 10px;
+}
+
+@media screen and ( max-width: 700px ){
+  display: grid;
+
 }
