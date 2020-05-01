@@ -1,0 +1,160 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:after, a:active, a:before {
+  text-decoration: none;
+  color: inherit;
+}
+
+@mixin imageProps($height, $width) {
+  height: $height;
+  width: $width;
+
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+%icon-containers {
+  padding: 10px;
+  background: rgba(114, 98, 163, 1);
+  margin: 5px;
+  border-radius: 9%;
+  position: relative;
+}
+
+%page-content {
+  height: 50px;
+  width: 210px;
+  font-size: 80%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 70px);
+  background: #504472;
+  border: 1px solid rgba(114, 98, 163, 1);
+  color: rgba(114, 98, 163, 1);
+  border-radius: 3%;
+  padding: 10px;
+}
+
+@mixin viewable-page() {
+  display: grid;
+  grid-template-columns: 1fr 4fr !important;
+  grid-gap: 10px;
+}
+
+.about-container {
+  display: grid;
+  justify-items: center;
+
+  background: #504472;
+
+  border-radius: 3%;
+}
+
+.about-text {
+  font-size: 120%;
+  font-weight: bold;
+  color: rgba(114, 98, 163, 1);
+}
+
+.account-row {
+  margin: 10px 0;
+
+  .image-carrier {
+    @include imageProps(100px, 100px);
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.accounts {
+  color: #504472;
+  font-size: 140%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  .facebook {
+    @extend %icon-containers;
+
+    .page {
+      @extend %page-content;
+      display: none;
+
+      .image-carrier {
+        @include imageProps(50px, 50px);
+
+        img {
+          width: 100%;
+        }
+      }
+      .content {
+        .bottom-text {
+          font-size: 80%;
+        }
+      }
+    }
+  }
+
+  .linkedin {
+    @extend %icon-containers;
+
+    .page {
+      @extend %page-content;
+      display: none;
+
+      .image-carrier {
+        @include imageProps(50px, 50px);
+
+        img {
+          width: 100%;
+        }
+      }
+      .content {
+        .bottom-text {
+          font-size: 80%;
+        }
+      }
+    }
+  }
+
+  .whatsapp {
+    @extend %icon-containers;
+
+    .page {
+      @extend %page-content;
+      display: none;
+
+      .image-carrier {
+        @include imageProps(50px, 50px);
+
+        img {
+          width: 100%;
+        }
+      }
+      .content {
+        .bottom-text {
+          font-size: 80%;
+        }
+      }
+    }
+
+
+  }
+}
+
+.whatsapp:hover .page {
+  @include viewable-page();
+}
+
+.linkedin:hover .page {
+  @include viewable-page();
+}
+
+.facebook:hover .page {
+  @include viewable-page();
+}
