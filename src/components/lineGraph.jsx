@@ -8,15 +8,15 @@ export class LineGraph extends Component {
         this.state = {
             width: 0,
             height: 0,
-            chartWidth: 0,
+            chartWidth: window.innerWidth * .75,
             data: []
         };
         this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
     }
 
-    componentDidMount() {
+    async componentDidMount(): void {
         //https://api.covid19api.com/country/tanzania?from=2020-03-01T00:00:00Z&to=2020-04-01T00:00:00Z
-        axios.default.get(
+        await axios.default.get(
             'https://api.covid19api.com/dayone/country/tanzania'
         ).then((res) => {
             this.setState({
@@ -36,7 +36,8 @@ export class LineGraph extends Component {
     updateWindowDimensions() {
         this.setState({
             width: window.innerWidth,
-            height: window.innerHeight
+            height: window.innerHeight,
+                chartWidth: this.state.width * .75,
         });
         if (this.state.width < 1300) {
             this.setState({

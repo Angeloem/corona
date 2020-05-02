@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2671ad6e-a583-43c4-880f-e22655fc3182" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sidemenu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sidemenu.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/lineGraph.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/lineGraph.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/scatterPlot.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/scatterPlot.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/first_page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/first_page.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +23,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="develop" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JsFlowSettings">
@@ -49,11 +56,11 @@
     <property name="ts.external.directory.path" value="D:\applications\PyCharm 2019.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\challenges\corona\src\assets" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\challenges\corona\src\components" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\challenges\corona\src\assets" />
     </key>
   </component>
   <component name="RunDashboard">

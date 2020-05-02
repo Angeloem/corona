@@ -1,12 +1,70 @@
-import React, {Component} from "react";
-import {CartesianGrid, Legend, Scatter, ScatterChart, Tooltip, XAxis, YAxis, ZAxis} from "recharts";
+import React, {PureComponent} from "react";
+import {Pie, PieChart, Sector} from "recharts";
 import * as axios from "axios";
 
-export class ScatterPlot extends Component {
 
+const data = [
+    {name: 'Group A', value: 400},
+    {name: 'Group B', value: 300},
+    {name: 'Group C', value: 300},
+    {name: 'Group D', value: 200},
+];
+
+const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
+
+const renderActiveShape = (props) => {
+    const RADIAN = Math.PI / 180;
+    const {
+        cx, cy, midAngle, innerRadius, outerRadius, startAngle, endAngle,
+        fill, payload, percent, value,
+    } = props;
+    const sin = Math.sin(-RADIAN * midAngle);
+    const cos = Math.cos(-RADIAN * midAngle);
+    const sx = cx + (outerRadius + 10) * cos;
+    const sy = cy + (outerRadius + 10) * sin;
+    const mx = cx + (outerRadius + 30) * cos;
+    const my = cy + (outerRadius + 30) * sin;
+    const ex = mx + (cos >= 0 ? 1 : -1) * 22;
+    const ey = my;
+    const textAnchor = cos >= 0 ? 'start' : 'end';
+
+    return (
+        <g>
+            <text x={cx} y={cy} dy={8} textAnchor="middle" fill={fill}>{payload.name}</text>
+            <Sector
+                cx={cx}
+                cy={cy}
+                innerRadius={innerRadius}
+                outerRadius={outerRadius}
+                startAngle={startAngle}
+                endAngle={endAngle}
+                fill={fill}
+            />
+            <Sector
+                cx={cx}
+                cy={cy}
+                startAngle={startAngle}
+                endAngle={endAngle}
+                innerRadius={outerRadius + 6}
+                outerRadius={outerRadius + 10}
+                fill={fill}
+            />
+            <path d={`M${sx},${sy}L${mx},${my}L${ex},${ey}`} stroke={fill} fill="none"/>
+            <circle cx={ex} cy={ey} r={2} fill={fill} stroke="none"/>
+            <text x={ex + (cos >= 0 ? 1 : -1) * 12} y={ey} textAnchor={textAnchor} fill="#333">{`PV ${value}`}</text>
+            <text x={ex + (cos >= 0 ? 1 : -1) * 12} y={ey} dy={18} textAnchor={textAnchor} fill="#999">
+                {`(Rate ${(percent * 100).toFixed(2)}%)`}
+            </text>
+        </g>
+    );
+};
+
+
+export default class Example extends PureComponent {
     constructor(props) {
         super(props);
         this.state = {
+            activeIndex: 0,
             width: 0,
             height: 0,
             data: []
@@ -35,87 +93,30 @@ export class ScatterPlot extends Component {
     updateWindowDimensions() {
         this.setState({width: window.innerWidth, height: window.innerHeight});
     }
-    data01 = [
-        {
-            "x": 100,
-            "y": 200,
-            "z": 200
-        },
-        {
-            "x": 120,
-            "y": 100,
-            "z": 260
-        },
-        {
-            "x": 170,
-            "y": 300,
-            "z": 400
-        },
-        {
-            "x": 140,
-            "y": 250,
-            "z": 280
-        },
-        {
-            "x": 150,
-            "y": 400,
-            "z": 500
-        },
-        {
-            "x": 110,
-            "y": 280,
-            "z": 200
-        }
-    ];
-    data02 = [
-        {
-            "x": 200,
-            "y": 260,
-            "z": 240
-        },
-        {
-            "x": 240,
-            "y": 290,
-            "z": 220
-        },
-        {
-            "x": 190,
-            "y": 290,
-            "z": 250
-        },
-        {
-            "x": 198,
-            "y": 250,
-            "z": 210
-        },
-        {
-            "x": 180,
-            "y": 280,
-            "z": 260
-        },
-        {
-            "x": 210,
-            "y": 220,
-            "z": 230
-        }
-    ];
+
+
+    onPieEnter = (data, index) => {
+        this.setState({
+            activeIndex: index,
+        });
+    };
 
     render() {
         return (
-            <div className={`scatter-plot`}>
-                <ScatterChart width={730} height={this.state.height / 2}
-                              margin={{top: 20, right: 20, bottom: 10, left: 10}}>
-                    {/*<CartesianGrid strokeDasharray="3 3"/>*/}
-                    <XAxis dataKey="Deaths" name="Confirmed"/>
-                    <YAxis dataKey="Recovered" name="Recovered"/>
-                    <ZAxis dataKey="NewConfirmed" name="New Confirmed" unit="people"/>
-                    <Tooltip cursor={{strokeDasharray: '3 3'}}/>
-                    <Legend/>
-                    <Scatter name="Confirmed" data={this.state.data} fill="#8884d8"/>
-                    <Scatter name="Deaths" data={this.state.data} fill="#82ca9d"/>
-                </ScatterChart>
-            </div>
+            <PieChart width={400} height={400}>
+                <Pie
+                    activeIndex={this.state.activeIndex}
+                    activeShape={renderActiveShape}
+                    data={data}
+                    cx={200}
+                    cy={200}
+                    innerRadius={60}
+                    outerRadius={80}
+                    fill="#8884d8"
+                    dataKey="value"
+                    onMouseEnter={this.onPieEnter}
+                />
+            </PieChart>
         );
     }
-
 }

@@ -22,8 +22,8 @@ export class FirstPage extends Component {
         };
     }
 
-    componentDidMount(){
-        axios.default.get(
+    async componentDidMount(): void{
+        await axios.default.get(
             'https://api.covid19api.com/summary'
         ).then((res) => {
             this.setState({
@@ -48,6 +48,7 @@ export class FirstPage extends Component {
                         {/* craze menu here */}
                         <Menu/>
                     </div>
+                        {/*<FirstPage />*/}
                     <div className={`tiles`}>
                         {/* tiles here*/}
                         { Tile(this.state.newConfirmed ) }
