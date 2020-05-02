@@ -1,6 +1,9 @@
 .container{
   display: grid;
-  grid-template-columns: 5fr 2fr;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  .middle-container {
+    grid-column: span 4;
+  }
 }
 
 .sidebar{
@@ -45,7 +48,6 @@
   margin: 10px;
 }
 
-@media screen and ( max-width: 700px ){
-  display: grid;
-
+.tanzania-header {
+  color: rgba(114, 98, 163, 1);
 }
