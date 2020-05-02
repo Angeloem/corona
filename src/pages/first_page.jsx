@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import {Sidemenu} from "../components/sidemenu";
 import {Menu} from "../components/menu";
 import {Tile, Tile2, Tile3, Tile4} from "../components/tile";
 import {LineGraph} from "../components/lineGraph";
@@ -33,7 +32,6 @@ export class FirstPage extends Component {
                 totalRecoveries: res.data.Global['TotalRecovered'],
                 totalConfirmed: res.data.Global['TotalConfirmed']
             });
-            console.log(res.data.Global['TotalDeaths']);
         }).catch((err) => {
             alert('Data loading failed, please try again!!');
         });
@@ -60,7 +58,7 @@ export class FirstPage extends Component {
                     <div className={`graphs`}>
                         {/* graphs here */}
                         {/*<CoronaChase />*/}
-                        <h4>Tanzania's Stats</h4>
+                        <h4 className={`tanzania-header`}>Tanzania's Stats</h4>
                         <div className={`area-chart`}>
                             <LineGraph />
                         </div>

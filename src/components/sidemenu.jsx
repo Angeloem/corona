@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import './styles/sidemenu.scss';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faDeaf, faHome, faMagic, faMedkit, faSearch, faSkullCrossbones} from "@fortawesome/free-solid-svg-icons";
+import {faHome, faMedkit, faSearch, faSkullCrossbones} from "@fortawesome/free-solid-svg-icons";
 
 export class Sidemenu extends Component {
     render() {
