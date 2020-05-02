@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2671ad6e-a583-43c4-880f-e22655fc3182" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/first_page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/first_page.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/styles/first_page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/styles/first_page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sidemenu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sidemenu.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +95,7 @@
       <updated>1588216281008</updated>
       <workItem from="1588216306393" duration="6730000" />
       <workItem from="1588240247416" duration="29631000" />
-      <workItem from="1588341029922" duration="17413000" />
+      <workItem from="1588341029922" duration="25967000" />
     </task>
     <task id="LOCAL-00001" summary="Added an import of the first page.. That's the first view">
       <created>1588273778958</created>
@@ -203,7 +202,21 @@
       <option name="project" value="LOCAL" />
       <updated>1588351282654</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Added grid support for responsiveness">
+      <created>1588387165162</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1588387165162</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Added multiple features to the graph">
+      <created>1588387207141</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1588387207141</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,6 +250,8 @@
     <MESSAGE value="Added the about me component... &#10;Changed the colors of the panels background to the theme color" />
     <MESSAGE value="Changed the page name and the icon to reflect corona's theme" />
     <MESSAGE value="Added assets which were displayed into the about page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added assets which were displayed into the about page" />
+    <MESSAGE value="Added grid support for responsiveness" />
+    <MESSAGE value="Added multiple features to the graph" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added multiple features to the graph" />
   </component>
 </project>
